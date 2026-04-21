@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tags */
+.zend {
+  border: 0.1rem solid rgb(66, 182, 81);
+}
+.zend:hover {
+  background: rgba(19, 90, 13, 0.25);
+}
+
+.filezilla {
+  border: 0.1rem solid rgb(182, 122, 66);
+}
+.filezilla:hover {
+  background: rgba(90, 57, 13, 0.25);
+}
+
+.php {
+  border: 0.1rem solid rgb(66, 74, 182);
+}
+.php:hover {
+  background: rgba(13, 27, 90, 0.25);
+}
+
+.ubuntu {
+  border: 0.1rem solid rgb(189, 104, 25);
+}
+.ubuntu:hover {
+  background: rgba(90, 59, 13, 0.25);
+}
+
+.mysql {
+  border: 0.1rem solid rgb(43, 27, 187);
+}
+.mysql:hover {
+  background: rgba(9, 8, 56, 0.25);
+}
+
+.javascript {
+  border: 0.1rem solid rgb(182, 180, 66);
+}
+.javascript:hover {
+  background: rgba(90, 89, 13, 0.25);
+}
+
+.typescript {
+  border: 0.1rem solid rgb(62, 129, 183);
+}
+.typescript:hover {
+  background: rgba(11, 35, 68, 0.25);
+}
+
+.react {
+  border: 0.1rem solid rgb(62, 129, 183);
+}
+.react:hover {
+  background: rgba(11, 35, 68, 0.25);
+}
+
+.git {
+  border: 0.1rem solid rgb(140, 66, 182);
+}
+.git:hover {
+  background: rgba(66, 13, 90, 0.25);
+}
+
+.html {
+  border: 0.1rem solid rgb(182, 122, 66);
+}
+.html:hover {
+  background: rgba(90, 41, 13, 0.25);
+}
+
+.css {
+  border: 0.1rem solid rgb(66, 120, 182);
+}
+.css:hover {
+  background: rgba(13, 53, 90, 0.25);
+}
+
+.node {
+  border: 0.1rem solid rgb(66, 182, 81);
+}
+.node:hover {
+  background: rgba(19, 90, 13, 0.25);
+}
+
+.aws {
+  border: 0.1rem solid rgb(182, 138, 43);
+}
+.aws:hover {
+  background: rgba(90, 69, 13, 0.25);
+}
+
+.serverless {
+  border: 0.1rem solid rgb(172, 102, 45);
+}
+.serverless:hover {
+  background: rgba(63, 40, 9, 0.25);
+}
+
+.python {
+  border: 0.1rem solid rgb(55, 118, 171);
+}
+.python:hover {
+  background: rgba(13, 50, 90, 0.25);
+}
+
+.angular {
+  border: 0.1rem solid rgb(221, 0, 49);
+}
+.angular:hover {
+  background: rgba(90, 0, 20, 0.25);
+}
+
+.docker {
+  border: 0.1rem solid rgb(36, 150, 237);
+}
+.docker:hover {
+  background: rgba(9, 60, 110, 0.25);
+}
+
+.mongodb {
+  border: 0.1rem solid rgb(71, 162, 72);
+}
+.mongodb:hover {
+  background: rgba(19, 80, 20, 0.25);
+}
+
+.java {
+  border: 0.1rem solid rgb(237, 117, 36);
+}
+.java:hover {
+  background: rgba(110, 50, 9, 0.25);
+}
+
+.csharp {
+  border: 0.1rem solid rgb(35, 145, 32);
+}
+.csharp:hover {
+  background: rgba(10, 70, 9, 0.25);
+}

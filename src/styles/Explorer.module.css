@@ -1,0 +1,101 @@
+.explorer {
+  background: var(--explorer-bg);
+  width: 18vw;
+  color: rgb(225, 228, 232);
+  font-family: 'Source Sans Pro', sans-serif;
+  border-right: 1px solid var(--explorer-border);
+  text-decoration: none !important;
+}
+
+.files a {
+  text-decoration: none;
+}
+
+.title {
+  padding: 0.5rem 0.75rem;
+  font-weight: 250;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.7px;
+  margin-bottom: 0.2rem;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  background: var(--explorer-heading-bg);
+  height: 1.8rem;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.files {
+  transition: transform 0.1s ease-in-out; 
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.file {
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  text-decoration: none !important;
+}
+
+.file span {
+  margin-left: 5px;
+  text-decoration: none !important;
+}
+
+.file:hover {
+  background: var(--explorer-hover-bg);
+}
+
+.activeFile {
+  background: var(--explorer-hover-bg);
+}
+
+.fileName {
+  color: rgb(225, 228, 232);
+  text-decoration: none !important;
+}
+
+.fileName:hover,
+.fileName:focus,
+.fileName:active {
+    text-decoration: none;
+}
+
+.chevron {
+  margin-right: 3%;
+  transition: transform 0.2s;
+}
+
+@media screen and (min-width: 2000px) {
+  .explorer {
+    width: 10vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .explorer {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .explorer {
+    display: none;
+  }
+}

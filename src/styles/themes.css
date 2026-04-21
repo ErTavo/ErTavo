@@ -1,0 +1,23 @@
+:root {
+  --main-bg: #24292e;
+  --titlebar-bg: #1f2428;
+  --titlebar-hover: #343b41;
+  --titlebar-border: #191d20;
+  --bottombar-bg: #24292e;
+  --bottombar-border: #1b1f23;
+  --bottombar-hover-bg: #4f4f52;
+  --sidebar-bg: #24292e;
+  --sidebar-hover-bg: #1f2428;
+  --accent-color: #5696df;
+  --explorer-bg: #1f2428;
+  --explorer-border: #161a1d;
+  --explorer-hover-bg: #313241;
+  --explorer-heading-bg: #24292e;
+  --tabs-bg: #1f2428;
+  --tab-bg: #1f2428;
+  --tab-active-bg: #24292e;
+  --tab-active-bg: #24292e;
+  --accent-color-dark: #2f5886;
+  --article-bg: #2e3236;
+  --text-color: #efefef;
+}

@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75vh;
+  position: relative;
+}
+
+.foreground {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color: var(--accent-color);
+  align-items: flex-start;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.greeting {
+  color: #b3b3b3;
+  font-size: 1.0rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  color: #eee;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.bio {
+  width: max-content;
+  color: #eee;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.bio::before,
+.bio::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bio::before {
+  background: var(--main-bg);
+  animation: typewriter 2.5s steps(24) 500ms forwards;
+}
+
+.bio::after {
+  margin-left: 0.4rem;
+  width: 0.125em;
+  background: var(--accent-color);
+  animation: typewriter 2.5s steps(23) 500ms forwards,
+    blink 900ms steps(24) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.button {
+  background: var(--accent-color);
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1.5rem;
+  color: #eee;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  width: 140px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.outlined {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  color: #eee;
+  border: 2px solid var(--accent-color);
+  border-radius: 0.5rem;
+  background: transparent;
+  width: 140px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover,
+.outlined:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background: var(--accent-color-dark);
+}
+
+.illustration {
+  height: 550px;
+  width: 550px;
+}

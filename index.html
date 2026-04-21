@@ -15,6 +15,8 @@
         .text-gradient { background: linear-gradient(to right, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .floating { animation: floating 3s ease-in-out infinite; }
         @keyframes floating { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .bullet-point::before { content: '▹'; color: #818cf8; margin-right: 8px; position: absolute; left: 0; }
+        .bullet-list li { position: relative; padding-left: 20px; margin-bottom: 8px; }
     </style>
 </head>
 <body class="gradient-bg">
@@ -31,7 +33,7 @@
         </div>
     </nav>
 
-    <section class="min-h-[80vh] flex flex-col items-center justify-center text-center px-6">
+    <section class="min-h-[70vh] flex flex-col items-center justify-center text-center px-6">
         <div class="glass px-4 py-1 rounded-full text-sm mb-8 border-indigo-500/30 text-indigo-300">
             Disponible para nuevos proyectos
         </div>
@@ -46,55 +48,137 @@
                 Hablemos ahora
             </a>
             <a href="#experience" class="glass px-10 py-4 rounded-2xl font-bold hover:bg-white/5 transition-all">
-                Ver experiencia
+                Ver trayectoria
             </a>
         </div>
     </section>
 
-    <section id="experience" class="py-32 max-w-7xl mx-auto px-6">
+    <section id="experience" class="py-24 max-w-7xl mx-auto px-6">
         <h2 class="text-4xl font-bold mb-16 text-center">Trayectoria <span class="text-gradient">Profesional</span></h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="glass p-10 rounded-[2rem] hover-glow transition-all group">
-                <div class="flex justify-between items-start mb-6">
-                    <div class="bg-indigo-500/10 p-4 rounded-2xl group-hover:bg-indigo-500/20 transition">
-                        <i class="fas fa-briefcase text-indigo-400 text-2xl"></i>
+        <div class="grid grid-cols-1 gap-8">
+            <!-- SLC Trade -->
+            <div class="glass p-8 md:p-10 rounded-[2rem] hover-glow transition-all group">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-6 gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-indigo-500/10 p-4 rounded-2xl group-hover:bg-indigo-500/20 transition">
+                            <i class="fas fa-briefcase text-indigo-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Scrum Master y Desarrollador Senior</h3>
+                            <p class="text-indigo-400">SLC Trade</p>
+                        </div>
                     </div>
-                    <span class="text-slate-500 text-sm">2025 - Presente</span>
+                    <span class="text-slate-500 text-sm font-semibold bg-white/5 px-4 py-2 rounded-full">Nov 2025 - Actualidad</span>
                 </div>
-                <h3 class="text-2xl font-bold mb-2">Scrum Master & Sr. Dev</h3>
-                <p class="text-indigo-400 mb-6">SLC Trade</p>
-                <p class="text-slate-400 leading-relaxed">Liderazgo técnico y gestión ágil de proyectos de alta complejidad, optimizando procesos y arquitectura.</p>
+                <ul class="bullet-list text-slate-400 leading-relaxed">
+                    <li>Desarrollo y gestión de integraciones de sistemas.</li>
+                    <li>Diseño e implementación de arquitectura de infraestructura.</li>
+                    <li>Liderazgo de equipos multifuncionales y aplicación de metodologías ágiles.</li>
+                    <li>Desarrollo Full Stack de nivel Senior y automatización de procesos.</li>
+                    <li>Control de calidad (QA) y gestión de la autorización de despliegues.</li>
+                </ul>
             </div>
-            <div class="glass p-10 rounded-[2rem] hover-glow transition-all group">
-                <div class="flex justify-between items-start mb-6">
-                    <div class="bg-purple-500/10 p-4 rounded-2xl group-hover:bg-purple-500/20 transition">
-                        <i class="fas fa-code text-purple-400 text-2xl"></i>
+
+            <!-- Yalutec -->
+            <div class="glass p-8 md:p-10 rounded-[2rem] hover-glow transition-all group">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-6 gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-purple-500/10 p-4 rounded-2xl group-hover:bg-purple-500/20 transition">
+                            <i class="fas fa-code text-purple-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Desarrollador Full Stack</h3>
+                            <p class="text-purple-400">Yalutec</p>
+                        </div>
                     </div>
-                    <span class="text-slate-500 text-sm">2022 - Nov 2025</span>
+                    <span class="text-slate-500 text-sm font-semibold bg-white/5 px-4 py-2 rounded-full">Abr 2022 - Nov 2025</span>
                 </div>
-                <h3 class="text-2xl font-bold mb-2">Full Stack Developer</h3>
-                <p class="text-purple-400 mb-6">Yalutec</p>
-                <p class="text-slate-400 leading-relaxed">Desarrollo de soluciones escalables en la nube, integraciones de API y automatización de QA.</p>
+                <ul class="bullet-list text-slate-400 leading-relaxed">
+                    <li>Desarrollo de funciones "lambda" y "endpoints" de API.</li>
+                    <li>Implementación de flujos de interacción con "chatbots".</li>
+                    <li>Contribución en Front End, Back End, DevOps y aseguramiento de la calidad (QA).</li>
+                    <li>Creación de artefactos para aseguramiento de calidad (QA) automatizado y manual.</li>
+                </ul>
+            </div>
+
+            <!-- Medivision -->
+            <div class="glass p-8 md:p-10 rounded-[2rem] hover-glow transition-all group">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-6 gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-blue-500/10 p-4 rounded-2xl group-hover:bg-blue-500/20 transition">
+                            <i class="fas fa-server text-blue-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Administrador de Sistemas</h3>
+                            <p class="text-blue-400">Medivision</p>
+                        </div>
+                    </div>
+                    <span class="text-slate-500 text-sm font-semibold bg-white/5 px-4 py-2 rounded-full">Nov 2022 - Abr 2023</span>
+                </div>
+                <ul class="bullet-list text-slate-400 leading-relaxed">
+                    <li>Análisis de datos utilizando Power BI para la toma de decisiones.</li>
+                    <li>Provisión de soporte técnico y ejecución de pruebas de la nueva versión del sistema.</li>
+                    <li>Integración de nuevas tecnologías para la optimización de la operación.</li>
+                </ul>
+            </div>
+
+            <!-- Telus International -->
+            <div class="glass p-8 md:p-10 rounded-[2rem] hover-glow transition-all group">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-6 gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-pink-500/10 p-4 rounded-2xl group-hover:bg-pink-500/20 transition">
+                            <i class="fas fa-users text-pink-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Líder de Equipo</h3>
+                            <p class="text-pink-400">Telus International</p>
+                        </div>
+                    </div>
+                    <span class="text-slate-500 text-sm font-semibold bg-white/5 px-4 py-2 rounded-full">May 2020 - Nov 2020</span>
+                </div>
+                <ul class="bullet-list text-slate-400 leading-relaxed">
+                    <li>Monitoreo y análisis en tiempo real de los Indicadores Clave de Rendimiento (KPI) del equipo.</li>
+                    <li>Auditoría de interacciones para identificar oportunidades de mejora.</li>
+                    <li>Diseño e implementación de planes de acción personalizados para los miembros del equipo.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="py-32 bg-white/5">
+    <section class="py-24 bg-white/5">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-20 items-center">
                 <div>
                     <h2 class="text-4xl font-bold mb-8">Stack <span class="text-gradient">Tecnológico</span></h2>
-                    <p class="text-slate-400 mb-12 text-lg">Dominio de múltiples lenguajes y frameworks para ofrecer soluciones integrales de punta a punta.</p>
-                    <div class="grid grid-cols-3 gap-4">
-                        <div class="glass p-4 rounded-xl text-center text-sm">JavaScript</div>
-                        <div class="glass p-4 rounded-xl text-center text-sm">Python</div>
-                        <div class="glass p-4 rounded-xl text-center text-sm">React</div>
-                        <div class="glass p-4 rounded-xl text-center text-sm">AWS</div>
-                        <div class="glass p-4 rounded-xl text-center text-sm">Node.js</div>
-                        <div class="glass p-4 rounded-xl text-center text-sm">SQL</div>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-indigo-300 font-bold mb-3">Lenguajes</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="glass px-3 py-1 rounded-lg text-sm">JavaScript</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">TypeScript</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">Python</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">Java</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">C#</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">PHP</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">Go</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">SQL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-purple-300 font-bold mb-3">Frameworks & Cloud</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="glass px-3 py-1 rounded-lg text-sm">React</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">Angular</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">Node.js</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">AWS</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">Jenkins</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">Flutter</span>
+                                <span class="glass px-3 py-1 rounded-lg text-sm">.Net</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="relative">
+                <div class="relative hidden md:block">
                     <div class="glass p-8 rounded-3xl floating border-indigo-500/20">
                         <div class="flex items-center gap-4 mb-6">
                             <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center font-bold">G</div>

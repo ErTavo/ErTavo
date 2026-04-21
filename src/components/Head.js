@@ -6,20 +6,20 @@ export default function HeadComponent ({ title }) {
     <Head>
       <title>{title}</title>
       <meta
-        name = "description"
-        content = "Luis Arana's Portfolio"
+        name="description"
+        content="Gustavo Gutiérrez's Portfolio"
       />
-      <meta 
-        name = "keywords"
-        content = "luis arana, backend developer, developer, portfolio"
+      <meta
+        name="keywords"
+        content="gustavo gutierrez, full stack developer, scrum master, portfolio"
       />
-      <meta 
-        name = "author"
-        content = "Luis Arana"
+      <meta
+        name="author"
+        content="Gustavo Gutiérrez"
       />
-      <meta 
-        property="og:title" 
-        content="Luis Arana's Portfolio" 
+      <meta
+        property="og:title"
+        content="Gustavo Gutiérrez's Portfolio"
       />
     </Head>
   )

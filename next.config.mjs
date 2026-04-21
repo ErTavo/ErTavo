@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/Profile-page',
-  assetPrefix: '/Profile-page',
+  basePath: '/ErTavo',
+  assetPrefix: '/ErTavo',
   reactStrictMode: true,
   images: {
     remotePatterns: [

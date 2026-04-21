@@ -9,7 +9,7 @@ const OPTIONS = [
   'Help',
 ]
 
-const TITLE = 'Luis Arana - Visual Studio Code'
+const TITLE = 'Gustavo Gutiérrez - Visual Studio Code'
 
 const BUTTONS = [
   'minimize',

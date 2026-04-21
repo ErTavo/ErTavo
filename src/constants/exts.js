@@ -1,27 +1,27 @@
 const EXTS_FILES = {
   js: {
     name: 'Javascript',
-    icon: 'https://luisarana631.github.io/Profile-page/js_icon.svg',
+    icon: 'https://api.iconify.design/vscode-icons/file-type-js-official.svg',
   },
   html: {
     name: 'HTML',
-    icon: 'https://luisarana631.github.io/Profile-page/html_icon.svg',
+    icon: 'https://api.iconify.design/vscode-icons/file-type-html.svg',
   },
   css: {
     name: 'CSS',
-    icon: 'https://luisarana631.github.io/Profile-page/css_icon.svg',
+    icon: 'https://api.iconify.design/vscode-icons/file-type-css.svg',
   },
   json: {
     name: 'JSON',
-    icon: 'https://luisarana631.github.io/Profile-page/json_icon.svg',
+    icon: 'https://api.iconify.design/vscode-icons/file-type-json.svg',
   },
   yml: {
     name: 'YAML',
-    icon: 'https://luisarana631.github.io/Profile-page/yml_icon.svg',
+    icon: 'https://api.iconify.design/vscode-icons/file-type-yaml.svg',
   },
   md: {
     name: 'Markdown',
-    icon: 'https://luisarana631.github.io/Profile-page/md_icon.svg',
+    icon: 'https://api.iconify.design/vscode-icons/file-type-markdown.svg',
   }
 }
 

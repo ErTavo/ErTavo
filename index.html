@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Gutiérrez | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap');
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #050505; color: #ffffff; overflow-x: hidden; }
+        .gradient-bg { background: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #050505 100%); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .hover-glow:hover { box-shadow: 0 0 30px rgba(99, 102, 241, 0.3); border-color: rgba(99, 102, 241, 0.5); }
+        .text-gradient { background: linear-gradient(to right, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    </style>
+</head>
+<body class="gradient-bg">
+    <div class="fixed top-0 left-0 w-full h-full pointer-events-none z-[-1]">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-900/20 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-900/20 rounded-full blur-[120px]"></div>
+    </div>
+
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter text-gradient">G.GUTIERREZ</div>
+        <div class="flex gap-6">
+            <a href="https://github.com/ErTavo" target="_blank" class="glass p-3 rounded-full hover-glow transition"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gustavogutierrez01" target="_blank" class="glass p-3 rounded-full hover-glow transition"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
+
+    <section class="min-h-[80vh] flex flex-col items-center justify-center text-center px-6">
+        <div class="glass px-4 py-1 rounded-full text-sm mb-8 border-indigo-500/30 text-indigo-300">
+            Disponible para nuevos proyectos
+        </div>
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
+            Full Stack <br> <span class="text-gradient">Developer</span>
+        </h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
+            Ingeniero en Sistemas y Scrum Master. Transformo ideas complejas en experiencias digitales excepcionales mediante código limpio y escalable.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4">
+            <a href="mailto:gusjr11@gmail.com" class="bg-indigo-600 hover:bg-indigo-700 px-10 py-4 rounded-2xl font-bold transition-all transform hover:scale-105 shadow-lg shadow-indigo-500/20">
+                Hablemos ahora
+            </a>
+            <a href="#experience" class="glass px-10 py-4 rounded-2xl font-bold hover:bg-white/5 transition-all">
+                Ver experiencia
+            </a>
+        </div>
+    </section>
+
+    <section id="experience" class="py-32 max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-16 text-center">Trayectoria <span class="text-gradient">Profesional</span></h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-10 rounded-[2rem] hover-glow transition-all group">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="bg-indigo-500/10 p-4 rounded-2xl group-hover:bg-indigo-500/20 transition">
+                        <i class="fas fa-briefcase text-indigo-400 text-2xl"></i>
+                    </div>
+                    <span class="text-slate-500 text-sm">2025 - Presente</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Scrum Master & Sr. Dev</h3>
+                <p class="text-indigo-400 mb-6">SLC Trade</p>
+                <p class="text-slate-400 leading-relaxed">Liderazgo técnico y gestión ágil de proyectos de alta complejidad, optimizando procesos y arquitectura.</p>
+            </div>
+            <div class="glass p-10 rounded-[2rem] hover-glow transition-all group">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="bg-purple-500/10 p-4 rounded-2xl group-hover:bg-purple-500/20 transition">
+                        <i class="fas fa-code text-purple-400 text-2xl"></i>
+                    </div>
+                    <span class="text-slate-500 text-sm">2022 - Presente</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Full Stack Developer</h3>
+                <p class="text-purple-400 mb-6">Yalutec</p>
+                <p class="text-slate-400 leading-relaxed">Desarrollo de soluciones escalables en la nube, integraciones de API y automatización de QA.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8">Stack <span class="text-gradient">Tecnológico</span></h2>
+                    <p class="text-slate-400 mb-12 text-lg">Dominio de múltiples lenguajes y frameworks para ofrecer soluciones integrales de punta a punta.</p>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="glass p-4 rounded-xl text-center text-sm">JavaScript</div>
+                        <div class="glass p-4 rounded-xl text-center text-sm">Python</div>
+                        <div class="glass p-4 rounded-xl text-center text-sm">React</div>
+                        <div class="glass p-4 rounded-xl text-center text-sm">AWS</div>
+                        <div class="glass p-4 rounded-xl text-center text-sm">Node.js</div>
+                        <div class="glass p-4 rounded-xl text-center text-sm">SQL</div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="glass p-8 rounded-3xl floating border-indigo-500/20">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center font-bold">G</div>
+                            <div>
+                                <h4 class="font-bold">Gustavo Gutiérrez</h4>
+                                <p class="text-xs text-slate-500">Ingeniero en Sistemas</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="h-2 bg-white/10 rounded-full w-full"></div>
+                            <div class="h-2 bg-white/10 rounded-full w-3/4"></div>
+                            <div class="h-2 bg-white/10 rounded-full w-1/2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center border-t border-white/5">
+        <p class="text-slate-500 mb-4">© 2026 Gustavo Gutiérrez</p>
+        <div class="flex justify-center gap-6">
+            <a href="mailto:gusjr11@gmail.com" class="text-slate-400 hover:text-white transition">Email</a>
+            <a href="https://www.linkedin.com/in/gustavogutierrez01" class="text-slate-400 hover:text-white transition">LinkedIn</a>
+            <a href="https://github.com/ErTavo" class="text-slate-400 hover:text-white transition">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
